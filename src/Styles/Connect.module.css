@@ -1,0 +1,31 @@
+.container{
+    margin: 10vh auto;
+    border: 1px solid black;
+}
+.container h1{
+    margin-top: 10vh;
+    text-align: center;
+}
+.wallets{
+    /* border: 1px solid black; */
+    width: 40%;
+    margin: 10vh auto;
+    background: #F5F5F5;
+
+}
+.wallet{
+    display: flex;
+    margin: 25px;
+    border-bottom: 2px solid white;
+}
+.wallet img{
+    width: 75px;
+    height: 75px;
+    background: #F5F5F5;
+    padding-bottom: 28px;
+
+}
+.wallet h2{
+    margin-left: 40px;
+}
+

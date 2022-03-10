@@ -1,0 +1,53 @@
+.footer{
+    background: linear-gradient(180.15deg, #3FF5FF 0.13%, #39AEF7 22.78%, #3681F1 65.38%);
+width: 100vw;
+}
+.foot_grids{
+    width: 90%;
+    /* border: 1px solid black; */
+    color: #F4F8F7;
+    margin: 0 auto;
+}
+.foot_01{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+    /* border: 1px solid black; */
+}
+
+.ft_email{
+    display: flex;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.36) 0%, rgba(255, 255, 255, 0.92) 100%);
+/* border: 1px solid black; */
+}
+.em_input input{
+    background-color: inherit;
+    border: none;
+    color: white;
+    height: 100%;
+}
+
+.em_btn button{
+    background: linear-gradient(95.49deg, #00F0FD -36.87%, #3681F1 98.63%);
+    border: none;
+    width: 125px;
+    height: 30px;
+    color: white;
+}
+
+.foot_102, .foot_103{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+/* .foot_104 div{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.27) 7.27%, rgba(255, 255, 255, 0.7) 97.33%);
+
+} */
+.foot_02{
+    display: flex;
+    margin-top: 45px;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+}

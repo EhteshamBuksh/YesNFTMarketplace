@@ -1,0 +1,234 @@
+
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+
+}
+.navbar{
+    width: 100vw;
+    height: 100px;
+        background: linear-gradient(89.95deg, #3681F1 70.53%, #3FF5FF 99.11%);
+display: flex;
+justify-content: space-between;
+color: white;
+top: 0;
+position: fixed;
+/* border: 1px solid whitesmoke; */
+}
+
+.logoname{
+    display: flex;
+    margin-left: 32px;
+    /* border: 1px solid white; */
+    text-align: center;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.logo{
+    height: 78px;
+    width: 64px;
+    background-image: url('../Images/logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 10px;
+}
+
+.brandName{
+    height: 50px;
+    width: 210px;
+    background-image: url('../Images/brandName.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 10px;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+    margin-right: 112px;
+
+
+}
+.items ul{
+    display: flex;
+    list-style: none;
+
+}
+.items ul li{
+margin-left: 0px;
+margin-right: 25px;
+text-align: center;
+position: relative;
+}
+
+.items ul li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: all .45s;
+}
+
+.items ul li:hover::before{
+    width: 100%;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+.search-box input{
+    background: linear-gradient(90.28deg, rgba(255, 255, 255, 0.09) -5.54%, rgba(255, 255, 255, 0.16) 112.42%);
+    border: none;
+    padding: 5px;
+    background-color: inherit;
+    margin: 0 20px;
+    z-index: 2;
+    /* border: 1px solid red; */
+    width: 382px;
+}
+.search-box input::placeholder{
+    color: white;
+    font-weight: bold;
+}
+.search{
+    height: 20px;
+    width: 20px;
+    background-image: url('../Images/search-icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+margin-left: 20px;
+z-index: -5;
+/* margin-right: 10px; */
+position:absolute;
+/* border: 1px solid black; */
+}
+
+.items button{
+    width: 120px;
+    height: 48px;
+    border-radius: 56px;
+    background: linear-gradient(95.49deg, #00F0FD -36.87%, #3681F1 98.63%);
+    border: none;
+    color: #ffffff;
+}
+
+.userImage{
+    height: 24px;
+    width: 24px;
+    background-image: url('../Images/user.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 10px;
+}
+.gitImage{
+    height: 24px;
+    width: 24px;
+
+background-image: url('../Images/gitlab.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 10px;
+}
+
+
+
+.nav-toggle{
+    display: none;
+}
+
+@media (max-width: 1000px){
+    .nav-toggle{
+        display: flex;
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .nav-toggle .bar{
+        position: relative;
+        width: 32px;
+        height: 2px;
+        background-color: #fff;
+        margin-right: 10px;
+    }
+.nav-toggle .bar::before, .nav-toggle .bar::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: #ffffff;
+    border-radius: 2px;
+    transition: all .45s ease-in-out;
+}
+.nav-toggle .bar::before{
+    width: 25px;
+    transform: translateY(-8px);
+    right: 0;
+}
+.nav-toggle .bar::after{
+    width: 32px;
+    transform: translateY(8px);
+}
+.nav-toggle.open .bar{
+    transform: translateX(-40px);
+    background: transparent;
+}
+.nav-toggle.open .bar::before{
+width: 32px;
+transform: rotate(45deg) translate(26px, -26px);
+}
+.nav-toggle.open .bar::after{
+transform: rotate(-45deg) translate(26px, 26px);
+}
+    .logoname{
+        margin-left: 0px;
+    }
+.items{
+    position: absolute;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    background: #04031A;
+    left: 0;
+    width: 100%;
+    height: 87vh;
+    justify-content: start;
+    transform: translateX(-100%);
+    transition:  all .45s;
+}
+.items::before{
+background: transparent;
+}
+.items.open{
+    transform: translateX(0);
+}
+.list-items ul{
+    flex-direction: column;
+
+}
+.list-items ul li, .search-box, .items button{
+    margin: 20px auto;
+}
+
+
+}
+
+
