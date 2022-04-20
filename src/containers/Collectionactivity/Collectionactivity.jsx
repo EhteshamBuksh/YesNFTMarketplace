@@ -4,7 +4,7 @@ import exp from "../../containers/Explore/Explore.module.css";
 import act from "../../containers/Activity/Activity.module.css";
 import filter from "../../images/filter_icon_996.png";
 import profile_image from "../../images/Profile_image.png";
-import Eth_image from "../../Images/Eth.png";
+import Eth_image from "../../images/Eth.png";
 import uparrow from '../../images/up_arrow.png';
 import downarrow from '../../images/down_arrow.png';
 import data from "../../activity_data";

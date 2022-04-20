@@ -1,7 +1,7 @@
 import React from "react";
 import stat from "./Stats.module.css";
 import profile_image from "../../images/Profile_image.png";
-import Eth_image from "../../Images/Eth.png";
+import Eth_image from "../../images/Eth.png";
 import data from "../../stats_data";
 import Select from 'react-select';
 
