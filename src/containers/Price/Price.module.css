@@ -1,0 +1,158 @@
+.container{
+    width: 90%;
+    margin: 20vh auto 0vh auto;
+    /* border: 1px solid black; */
+
+}
+.container h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    /* border: 1px solid black; */
+    margin-bottom: -16px;
+
+}
+.container p{
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    /* border: 1px solid black; */
+    position: relative;
+/* top: -30px; */
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 50px;
+    /* border: 1px solid black; */
+    margin: 10vh auto;
+}
+.grid_1 h3{
+    font-family: 'Urbanist', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+.matic{
+    border: 1px solid #CDD6D7;
+    height:44px;
+}
+.matic img, .fixed_btn_1 img, .fixed_btn_2 img{
+    width: 24px;
+    height: 24px;
+margin-left: 5px;
+}
+.fixed, .fix{
+    background-color: #f5f5f5;
+    /* border: 1px solid black; */
+}
+.fix{
+    margin-top: 3vh ;
+}
+.matic, .fixed_btn, .fixed_btn_1, .fixed_btn_2{
+    display: flex;
+    align-items: center;
+}
+.fixed_btn_1 p, .fixed_btn_2 p{
+    /* border: 1px solid black; */
+    margin-right: 10px;
+}
+.matic img{
+    margin: 0 15px;
+}
+.fixed_btn{
+    justify-content: flex-start;
+    /* margin: 3vh auto 0vh auto; */
+    border-bottom: 1px solid #CDD6D7;
+    width: 90%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+
+}
+.fixed_btn a{
+    text-decoration: none;
+    color: black;
+}
+.fixed_btn div{
+    cursor: pointer;
+    background-color: white;
+    margin: 10px 10px 10px 0px;
+
+}
+
+.fixed_btn div:hover{
+    border: 2px solid rgb(70, 119, 255);
+}
+
+.fixed_btn_1 p, .fixed_btn_2 p{
+    font-family: 'Urbanist', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.rate h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 32px;
+}
+.rate_input{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 10px 32px;
+    height: 50px;
+    padding-bottom: 10px;
+}
+.rate_input input{
+    width: 100%;
+    border: none;
+}
+.rate_input span{
+    margin-right: 20px;
+    background-color: #ffffff;
+}
+.rate_input span h3{
+    margin-right: 20px;
+}
+.sell_btn{
+    background: linear-gradient(95.49deg, #00F0FD -36.87%, #004EC2 98.63%);
+width: 90px;
+height: 50px;
+border: none;
+color: white;
+    border-radius: 36px;
+    margin: 8vh 0;
+}
+.cal button{
+    /* border-radius: 100%; */
+    /* height: 45px; */
+    padding: 6px;
+    margin: 5px;
+    border: none;
+}
+.cal button:hover{
+    background-color: #004EC2;
+    color: white;
+}
+.dates{
+    display: flex;
+    justify-content: space-between;
+}
+
+.date_input{
+    border: 1px solid black;
+    margin: 10px 20px 20px 32px;
+}
+.date_input input{
+    width: 230px;
+    height: 40px;
+}
+.exp_date h3{
+    margin-right: 20px;
+}
+.grid_2_img{
+    border: 1px solid #CDD6D7;
+    width:fit-content;
+}
+.grid_2_img img{
+    padding:18px;
+}

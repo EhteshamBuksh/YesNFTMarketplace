@@ -1,0 +1,231 @@
+.container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  /* gap: 50px; */
+  /* border: 1px solid black; */
+  margin: 100px auto;
+  width: 90vw;
+}
+@media screen and (max-width: 900px) {
+  .container {
+    grid-template-columns: none;
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 100px;
+  }
+}
+
+/* .container_2{
+  border: 1px solid black;
+} */
+
+.off_Settings {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+}
+
+.off h1 {
+  font-size: 28px;
+  font-weight: 600;
+  font-family: "Urbanist", sans-serif;
+}
+.off_Settings div button {
+  background: #cdd6d7;
+  font-size: 16px;
+  font-weight: 600;
+  color: #747681;
+  border: none;
+  width: 130px;
+  height: 30px;
+  margin: 0 auto;
+}
+.off_button {
+  margin: auto 0;
+  /* border: 1px solid black; */
+  height: fit-content;
+}
+
+.switch {
+  width: 60px;
+  height: 34px;
+  /* background-color: red; */
+  display: inline-block;
+  position: relative;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 100%;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.passwords {
+  width: 100%;
+  /* border: 1px solid black; */
+  margin: 5vh auto;
+  background-color: #f5f5f5;
+}
+.cr_pwd,
+.ch_pwd,
+.fg_pwd {
+  display: flex;
+  /* border: 1px solid black; */
+  cursor: pointer;
+  margin: 10px 15px;
+  align-items: center;
+}
+.cr_pwd h3,
+.ch_pwd h3,
+.fg_pwd h3 {
+  font-family: "Urbanist", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  /* border: 1px solid black; */
+}
+.new_pwd {
+  margin: 10px 15px;
+}
+.new_pwd h3 {
+  font-family: "Urbanist", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+.dw_arrow {
+  /* border: 1px solid black; */
+  margin-left: 15px;
+}
+.new_pwd div {
+  border: 1px solid black;
+  /* width: fit-content; */
+  width: 80%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.new_pwd button {
+  background: linear-gradient(95.49deg, #00f0fd -36.87%, #004ec2 98.63%);
+  width: 124px;
+  height: 44px;
+  border: none;
+  border-radius: 36px;
+  margin: 15px 0;
+  color: white;
+  cursor: pointer;
+}
+.new_pwd div input {
+  border: none;
+  padding: 8px;
+  width: 100%;
+}
+.new_pwd span {
+  cursor: pointer;
+  position: relative;
+  right: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .verify_image img {
+    min-width: 350px;
+    max-width: 100%;
+    min-height: 200px;
+    max-height: 100%;
+    border: 1px solid black;
+  }
+}
+
+.VerificationSettings {
+  margin: 5rem 20px;
+  gap: 2rem;
+  flex-flow: column;
+}
+
+.VerificationSettingsContent {
+  width: 100%;
+}
+
+.VerificationSettingsHeading {
+  padding: 10px 0;
+}
+
+.VerificationSettingsForm {
+  background: #f5f5f5;
+}
+
+.FormElement {
+  width: 100%;
+}
+
+@media (min-width: 767px) {
+  .SettingsFormDivider {
+    flex-flow: row;
+    gap: 60px;
+  }
+
+  .FormContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .FormElement {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1060px) {
+  .VerificationSettings {
+    margin: 5rem 20px;
+    flex-flow: row;
+  }
+
+  .FormElement {
+    width: 30%;
+  }
+
+  .VerificationSettingsContent {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1250px) {
+  .VerificationSettings {
+    margin: 5rem 30px;
+  }
+}
+
+@media (min-width: 1640px) {
+  .VerificationSettings {
+    margin: 5rem 10%;
+  }
+}

@@ -1,0 +1,288 @@
+.main_section {
+  width: 90%;
+  /* border: 1px solid black; */
+  margin: 20vh auto;
+  display: grid;
+  /* grid-template-columns: 20% 80%; */
+  grid-template-columns: 1fr 5fr;
+}
+
+@media screen and (max-width: 680px) {
+  .main_section {
+    /* grid-template-rows: repeat(auto-fit, minmax(300px, 1fr)); */
+    grid-template-columns: none;
+
+  }
+}
+
+.filter_section {
+  background: #f5f5f5;
+  height: fit-content;
+  /* border: 1px solid black; */
+}
+
+.filtered,
+.filter_status,
+.filter_price {
+  display: flex;
+  background: white;
+  /* text-align: center; */
+  margin: 16px;
+  /* border: 1px solid black; */
+}
+.filtered{
+  height: 48px;
+}
+.filtered div {
+  /* border: 1px solid black; */
+  margin: auto 5px;
+}
+
+.filtered div h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #04091e;
+}
+
+.filter_status {
+  flex-direction: column;
+}
+
+.status,
+.price,
+.brand_head,
+.artist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(245, 245, 245, 1);
+}
+.artist{
+height: 48px;
+}
+.brand_head{
+  height: 48px;
+}
+.status{
+  width: 206px;
+}
+.status h3, .price h3{
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Urbanist', sans-serif;
+  margin: 10px 0;
+  color: #04091E;;
+
+}
+/* .status:hover, .price:hover, .brand_head:hover */
+.status img,
+.price img,
+.brand_head img,
+.artist img {
+  margin-right: 10px;
+}
+
+
+.filter_status h3,
+.filter_price h3,
+.brand h3 {
+  margin-left: 10px;
+}
+.status_buttons{
+  width: 206px;
+}
+.status_buttons button {
+  width: 95px;
+  height: 40px;
+  border: none;
+  margin: 6px;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: 'Urbanist', sans-serif;
+  cursor: pointer;
+  /* background: #f5f5f5; */
+}
+.status_buttons button:nth-child(2){
+  font-weight: 500;
+}
+
+
+
+
+.status_buttons,
+.price_btns {
+  margin: 10px auto;
+  /* border: 1px solid black; */
+  display: flex;
+}
+
+.event_buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.event_buttons button {
+  width: 90px;
+  height: 40px;
+  border: none;
+
+}
+
+
+
+.filter_price {
+  flex-direction: column;
+}
+
+.price_matic {
+  background: #f5f5f5;
+  /* border: 1px solid black; */
+  width: 90%;
+  height: 40px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+}
+
+.price_matic h3{
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Urbanist', sans-serif;
+color: #04091E;;
+}
+.price_inputs {
+  display: flex;
+}
+
+.price_inputs input {
+  width: 40%;
+  margin: 5%;
+  height: 40px;
+  border: 1px solid #f5f5f5;
+  text-align: center;
+}
+
+.filter_price button {
+  margin-left: 14px;
+  margin-bottom: 14px;
+  width: 40%;
+  height: 40px;
+  border: none;
+  font-weight: bold;
+}
+
+.brand {
+  background: white;
+  margin: 8px 16px 8px 16px;
+}
+.search {
+  border: 1px solid #CDD6D7;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 90%;
+  margin: 10px auto;
+  /* margin-left: 30px; */
+  height: 35px;
+  cursor: pointer;
+
+}
+
+.search input::placeholder{
+font-size: 14px;
+color: #04091E;
+font-weight: 500;
+font-family: 'Urbanist', sans-serif;
+}
+
+.search img {
+  width: 20px;
+  height: 20px;
+}
+
+.search input {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.brand h3 {
+  font-weight: 700;
+  font-size: 16px;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.brands_details {
+  display: flex;
+  margin: 12px auto;
+}
+.last_brand{
+  /* border: 1px solid black; */
+  padding-bottom: 12px;
+}
+.brands_details div h3 {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #04091E;
+  margin-left: 8px;
+  /* border: 1px solid black; */
+}
+
+.brand_img {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background-color: lightgray;
+  /* border: 1px solid black; */
+  margin: auto 0 auto 10px;
+}
+
+
+.explore_menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 5vh;
+}
+
+.explore_menu p {
+  color: rgba(4, 9, 30, 0.6);
+  font-weight: 600;
+  font-size: 18px;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.selector {
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 1px solid black; */
+  align-items: center
+}
+
+.selector img {
+  margin: 0 15px;
+  width: 24px;
+  height: 24px;
+}
+
+.selector select {
+  width: 234px;
+  height: 48px;
+  background-color: #F5F5F5;
+}
+
+@media (max-width: 768px) {
+.status{ 
+  width: 100%;
+}
+.status_buttons{
+  justify-content: space-evenly;
+width: 100%;
+}
+}

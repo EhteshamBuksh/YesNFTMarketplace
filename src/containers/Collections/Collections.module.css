@@ -1,0 +1,325 @@
+.banner_img {
+  height: 320px;
+  /* background: #c4c4c4; */
+  /* margin-top: 70px; */
+  /* border: 1px solid black; */
+}
+
+.dp {
+  /* border: 1px solid black; */
+  margin: 3vh auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 80px;
+}
+
+.dp_1_weblink p {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  /* border: 1px solid black; */
+}
+
+.dp_1,
+.dp_3 {
+  display: flex;
+}
+
+/* .dp_1_img{
+    border: 1px solid black;
+} */
+.dp_1_img img {
+  /* border: 1px solid black; */
+  margin: 10px 5px;
+}
+
+.dp_1 {
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dp_2_img {
+  position: relative;
+  right: 100px;
+  bottom: 130px;
+  /* border: 1px solid black; */
+
+}
+
+.dp_2_img img {
+  /* border: 1px solid black; */
+  width: 200px;
+  height: 200px;
+
+}
+
+.dp_3 div {
+  margin-right: 10px;
+}
+
+.user_info {
+  text-align: center;
+}
+
+.user_info h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  /* border: 1px solid black; */
+  margin-bottom: 10px;
+}
+
+.user_address {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  align-items: center
+}
+
+.user_address p {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px;
+  color: #747681;
+}
+
+.details {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  background: rgba(245, 245, 245, 1);
+  padding: 0px 25px 0px 25px;
+
+}
+
+.details div {
+  text-align: center;
+  margin: 0px 15px 0px 15px;
+  /* border: 1px solid black; */
+  /* width: 100px; */
+  padding: 0px;
+  width: fit-content;
+
+}
+
+.details div h3 {
+  font-size: 24px;
+  border-right: 1px solid #747681;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 600;
+  margin: 24px 0px 0px 0px;
+}
+
+.details div:first-child h3{
+  /* border: 1px solid blue; */
+  padding-right: 15px;
+}
+.details div:nth-child(2) h3{
+  /* border: 1px solid blue; */
+  padding-right: 10px;
+}
+.details div:first-child p{
+  /* border: 1px solid blue; */
+  margin-right: 10px;
+}
+.details div p {
+  font-size: 16px;
+  color: #747681;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 500;
+  margin: 5px 0px 24px 0px;
+}
+
+.filter_search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  /* border: 1px solid black; */
+  margin: 0px auto 24px auto;
+  /* border-top: 2px solid rgba(245, 245, 245, 1); */
+
+}
+
+.search {
+  border: 1px solid #CDD6D7;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 35%;
+  /* margin-left: 30px; */
+  height: 35px;
+  cursor: pointer;
+
+}
+
+.search input::placeholder{
+font-size: 16px;
+font-weight: 500;
+font-family: 'Urbanist', sans-serif;
+}
+.search_options {
+  width: 25%;
+}
+
+.search_options :hover {
+  cursor: pointer;
+}
+
+.search img {
+  width: 20px;
+  height: 20px;
+}
+
+.search input {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.search_image img {
+  margin: 0px 10px 0px 10px;
+  cursor: pointer;
+}
+
+.filter_searchbar {
+  border: 1px solid white;
+  width: 90%;
+  margin: 0px 0px 5vh 40px;
+  /* width: fit-content; */
+  /* margin: 0px 0px 2vh 25%; */
+  /* border: 1px solid black; */
+  box-shadow: 0px 5px 20px rgba(4, 9, 30, 0.05);
+}
+
+.filter_extra {
+  width: 96%;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  width: 90%;
+  margin: 8vh auto;
+  /* border: 1px solid black; */
+}
+
+.about {
+  width: 38%;
+  margin: 5vh auto;
+  /* border: 1px solid black; */
+}
+
+.about p {
+  font-size: 16px;
+  color: #747681;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 500;
+
+}
+
+.about p span {
+  font-weight: bold;
+  color: black;
+}
+
+.page_container {
+  width: 95%;
+  border-bottom: 2px solid rgba(245, 245, 245, 1);
+  margin: 1vh auto;
+}
+
+.pages {
+  width: fit-content;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  display: flex;
+}
+
+.pages h3 {
+  margin: 15px;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #747681;
+}
+
+.pages h3:hover {
+  /* text-decoration: underline; */
+  transform: scale(1.1);
+  cursor: pointer;
+  color: #04091E;
+  font-weight: 700;
+}
+
+.pages a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    width: 70%;
+  }
+
+  .dp {
+    width: 100%;
+    /* border: 1px solid black; */
+    align-items:center;
+justify-content: space-between;
+margin: 0px;  }
+  .dp_2_img{
+    right: 20px;
+    bottom:40px
+  }
+  .dp_2_img img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .dp_1_weblink p {
+    font-size: 12px;
+  }
+  .filter_searchbar{
+    width: 100%;
+    margin: 3vh auto;
+  }
+  .search_image img{
+    margin: 0px 5px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .main {
+    grid-template-columns: none;
+
+  }
+  .search_options{
+    width: 45%;
+    border: 1px solid black;
+  }
+}
+
+.nft_button {
+  margin: 5vh auto;
+  text-align: center;
+  margin-bottom: 10vh;
+}
+
+.nft_button button {
+  border-radius: 30px;
+  border: 1px solid silver;
+  background-color: white;
+  width: 154px;
+  height: 54px;
+  color: #747681;
+}
+

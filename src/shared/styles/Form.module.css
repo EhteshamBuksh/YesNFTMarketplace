@@ -1,0 +1,36 @@
+.Form {
+  padding: 20px;
+}
+
+.FormRow {
+  margin: 0 -10px;
+}
+
+.ButtonContainer {
+  display: flex;
+  padding-top: 20px;
+}
+
+.Button,
+.SecondaryButton {
+  height: 48px;
+  background: linear-gradient(95.49deg, #02fccf -36.87%, #1448ff 98.63%);
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  font-weight: bold;
+  font-size: 16px;
+  gap: 10px;
+}
+
+.SecondaryButton {
+  background: white;
+}
+
+@media (min-width: 1060px) {
+  .Form {
+    padding: 2rem;
+  }
+}

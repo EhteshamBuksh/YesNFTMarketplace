@@ -1,0 +1,33 @@
+.about {
+    width: 38%;
+    margin: 5vh auto;
+    /* border: 1px solid black; */
+  }
+  .about p {
+    font-size: 16px;
+    color: #747681;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    }
+  .about p span {
+    font-weight: bold;
+    color: black;
+  }
+  .pages{
+      width: fit-content;
+      margin: 5vh auto;
+      /* border: 1px solid black; */
+      display: flex;
+  }
+  .pages h3{
+      margin: 15px;
+  }
+  .pages h3:hover{
+      text-decoration: underline;
+transform: scale(1.1);
+cursor: pointer;
+}
+.pages a{
+    text-decoration: none;
+    color: black;
+}

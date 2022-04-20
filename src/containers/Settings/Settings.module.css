@@ -1,0 +1,116 @@
+.Settings {
+  margin: 5rem 20px;
+  gap: 2rem;
+  flex-flow: column;
+}
+
+.SettingsContent {
+  flex: 2 0 auto;
+}
+
+.SettingsHeading {
+  padding: 10px 0;
+}
+
+.SettingsFormDivider {
+  display: flex;
+  flex-flow: column;
+}
+
+.ImageInput {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.ImageInputLabel {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 2rem;
+}
+
+.LeftDiv {
+  width: 100%;
+}
+
+.SettingsForm {
+  background: #f5f5f5;
+}
+
+.Button,
+.SecondaryButton {
+  height: 48px;
+  background: linear-gradient(95.49deg, #02fccf -36.87%, #1448ff 98.63%);
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  font-weight: bold;
+  font-size: 16px;
+  gap: 10px;
+}
+
+.SecondaryButton {
+  background: white;
+}
+
+.ProfileImage {
+  width: 96px;
+  height: 96px;
+  /* border: 1px solid black; */
+  background: #ffffff;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.BannerImage {
+  width: 160px;
+  height: 100px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.ImageElementContainer {
+  display: flex;
+}
+
+.ImageElementContainer button {
+  width: fit-content;
+  height: fit-content;
+  margin: auto 25px;
+  padding: 12px;
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+}
+
+@media (min-width: 767px) {
+  .SettingsFormDivider {
+    flex-flow: row;
+    gap: 60px;
+  }
+}
+
+@media (min-width: 1060px) {
+  .Settings {
+    flex-flow: row;
+  }
+
+  .LeftDiv {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1250px) {
+  .Settings {
+    margin: 5rem 30px;
+  }
+}
+
+@media (min-width: 1640px) {
+  .Settings {
+    margin: 5rem 10%;
+  }
+}

@@ -1,0 +1,139 @@
+.container {
+  margin: 20vh auto;
+  width: 90vw;
+  /* border: 1px solid black; */
+  display: grid;
+  gap: 5%;
+  grid-template-columns: 25% 70%;
+}
+@media screen and (max-width: 900px) {
+  .container {
+    margin: 10vh auto 20vh auto;
+    grid-template-columns: none;
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .not_settings {
+    text-align: center;
+  }
+}
+.not_settings h1 {
+  font-family: "Urbanist", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0px 0px 32px 0px;
+}
+
+.set_checkbox {
+  background: #f5f5f5;
+  /* border: 1px solid black; */
+  width: 90%;
+}
+
+@media screen and (max-width: 900px) {
+  .set_checkbox {
+    width: 100%;
+  }
+}
+/* .set_checkbox input:checked {
+  background: linear-gradient(95.49deg, #02fccf -36.87%, #1448ff 98.63%);
+} */
+.set_checkbox input {
+  margin: 24px 0px 0px 24px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.set_checkbox span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #04091e;
+  /* margin: 24px 0px 4px 12px; */
+  margin-left: 12px;
+  font-family: "Urbanist", sans-serif;
+}
+
+.set_checkbox p {
+  margin-left: 50px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #747681;
+  font-family: "Urbanist", sans-serif;
+}
+
+.set_checkbox button {
+  border: none;
+  width: 114px;
+  height: 44px;
+  color: white;
+  border-radius: 36px;
+  background: linear-gradient(95.49deg, #00f0fd -36.87%, #004ec2 98.63%);
+  font-size: 15px;
+  font-weight: 600;
+  margin: 150px 0px 100px 32px;
+}
+
+.NotificationSettings {
+  margin: 5rem 20px;
+  gap: 2rem;
+  flex-flow: column;
+}
+
+.NotificationSettingsContent {
+  width: 100%;
+}
+
+.NotificationSettingsHeading {
+  padding: 10px 0;
+}
+
+.SocialLinksForm {
+  background: #f5f5f5;
+}
+
+.FormElement {
+  width: 100%;
+}
+
+@media (min-width: 767px) {
+  .SettingsFormDivider {
+    flex-flow: row;
+    gap: 60px;
+  }
+
+  .FormContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .FormElement {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1060px) {
+  .NotificationSettings {
+    margin: 5rem 20px;
+    flex-flow: row;
+  }
+
+  .FormElement {
+    width: 30%;
+  }
+
+  .NotificationSettingsContent {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1250px) {
+  .NotificationSettings {
+    margin: 5rem 30px;
+  }
+}
+
+@media (min-width: 1640px) {
+  .NotificationSettings {
+    margin: 5rem 10%;
+  }
+}

@@ -1,0 +1,26 @@
+.ProfileSettingItem a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  height: 48px;
+  text-decoration: none;
+  color: #747681;
+  padding: 1rem;
+}
+
+.ProfileSettingItem a:hover {
+  background-color: #fff;
+  font-weight: bold;
+  color: #000;
+}
+
+.Active {
+  background-color: #fff;
+  font-weight: bold;
+  color: #000;
+}
+
+.Active span {
+  color: #000;
+}

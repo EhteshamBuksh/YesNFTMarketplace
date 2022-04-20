@@ -1,0 +1,142 @@
+.heading{
+    margin: 0  auto;
+    margin-top: 10vh;
+    width: 90vw;
+    /* border: 1px solid black; */
+}
+.heading h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+}
+.heading p{
+    width: 50%;
+    font-size:18px;
+    font-weight: 500;
+    color: rgba(4, 9, 30, 0.6);
+    font-family: 'Urbanist', sans-serif;
+
+}
+
+.size{
+    display: none;
+}
+
+.profile_img{
+    border: 1px dashed black;
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+ 
+}
+
+.img_div{
+    width: 90vw;
+    margin: 5vh auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 300px;
+    /* border: 1px solid black; */
+}
+
+.first_img p{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    margin: 15px auto;
+}
+.first_img h3{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+    margin: 20px auto;
+
+}
+.detailed{
+    height: 200px;
+}
+.first_img input{
+    width: 80%;
+    height: 44px;
+    /* border: 1px solid black; */
+}
+
+.preview_img{
+    width: 460px;
+    min-height: auto;
+        height: 430px;
+    border: 1px solid rgba(205, 214, 215, 1);
+    pointer-events: none;
+}
+.pr_img{
+/* border: 1px solid black; */
+padding:15px 15px 15px 15px;
+ }
+
+.blockchain{
+    display: flex;
+     border: 1px solid silver;
+     width: 80%;
+     height: 44px;
+     border: 1px solid #CDD6D7;
+}
+.blockchain img{
+    width: 24px;
+    height: 24px;
+    margin: auto 0;
+}
+.blockchain span{
+    margin: auto 20px;
+}
+
+.first_img select{
+    width: 80%;
+    height: 44px;
+    /* margin: 5vh auto; */
+}
+.new_brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    /* height: fit-content; */
+    width: 80%;
+}
+
+.new_brand input{
+    border: 1px solid #CDD6D7;
+    color: #747681;
+
+}
+
+.new_brand select{
+    width: 30%;
+    border: 1px solid #CDD6D7;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.first_img button{
+    background: linear-gradient(95.49deg, #00F0FD -36.87%, #004EC2 98.63%);
+width: 120px;
+height: 50px;
+border: none;
+color: white;
+border-radius: 36px;
+font-size: 20px;
+cursor: pointer;
+font-weight: 500;
+font-family: 'Urbanist', sans-serif;
+margin:5vh 0;
+}
+.sec_img p{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Urbanist', sans-serif;
+
+}
+@media screen and (max-width: 768px) {
+.sec_img{
+    display: none;
+}    
+}

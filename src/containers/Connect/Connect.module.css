@@ -1,0 +1,82 @@
+.Connect {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  margin: 2rem 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ConnectHeading {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.Wallets {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Wallet {
+  background: #f5f5f5;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.Wallet:hover {
+  box-shadow: 0 5px 10px 0px grey;
+}
+
+.Img {
+  width: 72px;
+  height: 72px;
+}
+
+@media screen and (min-width: 767px) {
+  .Connect {
+    margin: 2rem 20px;
+  }
+
+  .ConnectHeading {
+    font-size: 36px;
+  }
+
+  .Wallet {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 1060px) {
+  .Connect {
+    margin: 5rem 20px;
+  }
+
+  .Wallets {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .Connect {
+    margin: 5rem 30px;
+  }
+}
+
+@media screen and (min-width: 1640px) {
+  .Connect {
+    margin: 5rem 10%;
+  }
+}

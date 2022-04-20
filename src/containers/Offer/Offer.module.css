@@ -1,0 +1,49 @@
+.main_container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 50px;
+  /* border: 1px solid black; */
+  margin: 100px auto;
+  width: 90vw;
+}
+@media screen and (max-width: 900px) {
+  .main_container{
+    grid-template-columns: none;
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+}
+.off_Settings {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+}
+
+.off h1 {
+  font-size: 28px;
+  font-weight: 600;
+  font-family: 'Urbanist', sans-serif;
+
+}
+.off_Settings div button {
+  background: #cdd6d7;
+  font-size: 16px;
+  font-weight: 600;
+  color: #747681;
+  border: none;
+  width: 130px;
+  height: 30px;
+  margin: 0 auto;
+}
+.off_button {
+  margin: auto 0;
+  /* border: 1px solid black; */
+  height: fit-content;
+}
+.noOffer_image img{
+  min-width: 400px;
+    width:100%;
+  min-height:120px;
+  height: 100%;
+  /* border: 1px solid black; */
+}

@@ -1,0 +1,73 @@
+.Toolbar {
+  width: 100%;
+  height: 7rem;
+  background: linear-gradient(
+    90.27deg,
+    rgba(0, 78, 194, 0.9) 85.94%,
+    rgba(63, 245, 255, 0.9) 100%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 90;
+  padding: 0 10px;
+}
+
+.DesktopOnly {
+  display: none;
+}
+
+.LogoName {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.Logo {
+  height: 64px;
+  width: 64px;
+  background-image: url("../../../images/logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.BrandName {
+  height: 36px;
+  width: 146px;
+  background-image: url("../../../images/brandName.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 1060px) {
+  .DesktopOnly {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .Toolbar {
+    padding: 0 20px;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1250px) {
+  .Toolbar {
+    padding: 0 30px;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1640px) {
+  .Toolbar {
+    padding: 0 10%;
+  }
+}

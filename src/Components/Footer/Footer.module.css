@@ -1,0 +1,152 @@
+.footer {
+  background: #004EC2;
+  width: 100vw;
+height: auto;
+}
+.foot_grids {
+  width: 90%;
+  color: #f4f8f7;
+  margin: 0 auto;
+}
+.foot_01 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+.foot_101{
+  padding-top: 8vh;
+
+}
+.foot_101 h3{
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Urbanist', sans-serif;
+}
+.ft_email {
+  display: flex;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.36) 0%,
+    rgba(255, 255, 255, 0.92) 100%
+  );
+}
+
+.em_input input {
+  background-color: inherit;
+  border: none;
+  color: white;
+  height: 100%;
+  margin-left: 10px;
+}
+
+.em_input input::placeholder{
+  color: white;
+}
+
+.em_btn button {
+  background: linear-gradient(95.49deg, #00f0fd -36.87%, #3681f1 98.63%);
+  border: none;
+  width: 100px;
+  height: 30px;
+margin:5px 0; 
+ color: white;
+}
+
+.foot_102,
+.foot_103 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  left: 50px;
+  padding-top: 8vh;
+}
+
+.foot_102  p, .foot_103 p{
+  color: #F4F8F7;
+}
+
+.foot_102 h2,
+.foot_103 h2, .foot_104 h2 {
+font-size: 24px;
+font-weight: 700;
+font-family: 'Urbanist', sans-serif;
+letter-spacing: 1px;
+}
+
+.foot_104{
+  padding-top: 8vh;
+
+}
+
+.foot_104 select {
+  width: 300px;
+  height: 51px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.27) 7.27%, rgba(255, 255, 255, 0.7) 97.33%);
+color: white;
+border: none;
+}
+.foot_104 select option {
+  color: black;
+}
+.hiring{
+margin-top:10vh;
+border-width: 1px;
+border-style: solid;
+border-color: rgba(255,255,255,0.2);
+}
+.foot_02{
+  display: flex;
+  margin-top: 45px;
+  justify-content: space-between;
+
+}
+.foot_201, .foot_202{
+  width:35%;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  /* border: 1px solid black; */
+}
+.foot_202 img{
+margin: 14px;
+/* padding:5px; */
+  border-radius: 100%;
+  width: 48px;
+height: 48Spx;
+  border: 1px solid white;
+
+}
+.foot_202 img:first-child{
+  background-color:white;
+border: 1px solid black;
+}
+
+
+
+@media screen  and (max-width: 768px) {
+  .foot_02{
+    flex-direction: column;
+  }
+  .foot_201, .foot_202{
+    width: 80%;
+    margin: 25px auto;
+}
+.foot_102,
+.foot_103 {
+text-align: center;
+}
+.foot_102{
+  margin-left: 45px;
+}
+.em_input input{
+  width:150px;
+}
+.em_btn button{
+  width: fit-content;
+}
+.foot_104 select{
+  width:150px;
+  height: 30px;
+}
+}

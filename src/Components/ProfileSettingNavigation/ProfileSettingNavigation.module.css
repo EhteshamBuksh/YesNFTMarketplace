@@ -1,0 +1,29 @@
+.ProfileNavigation {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.Navigations {
+  background: #f5f5f5;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+}
+
+@media screen and (min-width: 767px) {
+}
+
+@media screen and (min-width: 1060px) {
+  .ProfileNavigation {
+    width: 20%;
+    margin-top: 15px;
+  }
+
+  .Navigations {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+}

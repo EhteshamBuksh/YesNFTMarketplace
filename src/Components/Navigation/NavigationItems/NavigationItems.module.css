@@ -1,0 +1,152 @@
+.Items {
+  display: flex;
+  flex-flow: column;
+  margin: 40px 0;
+  align-items: center;
+}
+.NavigationItems {
+  margin: 40px 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 100%;
+}
+
+.SearchBox {
+  position: relative;
+  /* border: 1px solid black; */
+  width: 95%;
+}
+
+.Input {
+  background: linear-gradient(
+    90.28deg,
+    rgba(255, 255, 255, 0.09) -5.54%,
+    rgba(255, 255, 255, 0.16) 112.42%
+  );
+  border: none;
+  height: 48px;
+  padding: 10px 20px 10px 45px;
+  background-color: inherit;
+  z-index: 2;
+  color: white;
+  width: 100%;
+}
+
+.Input::placeholder {
+  color: white;
+  font-weight: bold;
+}
+
+.SearchIcon {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  background-image: url("../../../images/search-icon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -5;
+}
+
+.RightNavigation {
+  display: flex;
+  align-items: center;
+}
+
+.Connect {
+  margin: 0 10px;
+}
+
+.ConnectButton {
+  height: 48px;
+  border-radius: 56px;
+  /* background: linear-gradient(95.49deg, #00F0FD -36.87%, #3681F1 98.63%); */
+  background-color: white;
+  border: none;
+  color: #000;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  line-height: 28px;
+  font-weight: bold;
+  width: 120px;
+}
+
+.Connected {
+  padding: 0 25px;
+  width: auto;
+}
+
+.UserImage,
+.GitImage {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  background-image: url("../../../images/user.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.GitImage {
+  background-image: none;
+  
+}
+.walletIcons{
+  height: 24px;
+  width: 24px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 10px;
+  cursor: pointer;
+
+}
+@media (min-width: 767px) {
+  .SearchBox {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1060px) {
+  .Items {
+    flex-flow: row;
+    margin: 0;
+  }
+  .NavigationItems {
+    flex-flow: row;
+    margin: 0 10px;
+  }
+  .SearchBox {
+    width: 250px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .SearchBox {
+    width: 323px;
+  }
+
+  .UserImage,
+  .GitImage {
+    margin: 0 15px;
+  }
+
+  .ConnectButton {
+    width: 120px;
+  }
+
+  .NavigationItems {
+    margin: 0 20px;
+  }
+}

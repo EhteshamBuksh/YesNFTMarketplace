@@ -1,0 +1,43 @@
+.DrawerToggle {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.Bar {
+  width: 32px;
+  height: 2px;
+  background-color: #fff;
+  margin-right: 10px;
+  position: relative;
+}
+
+.Bar::before,
+.Bar::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background: #ffffff;
+  border-radius: 2px;
+  transition: all 0.45s ease-in-out;
+}
+
+.Bar::before {
+  width: 25px;
+  transform: translateY(-8px);
+  right: 0;
+}
+
+.Bar::after {
+  width: 32px;
+  transform: translateY(8px);
+}
+
+@media (min-width: 1060px) {
+  .DrawerToggle {
+    display: none;
+  }
+}
